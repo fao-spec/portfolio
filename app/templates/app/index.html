@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %} <title>Home page</title> {% endblock %}
+{% load static %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% block main %}
+<div class="main-agba">
+    <div class="main">
+      <div class="header">
+        <img class="profile-img" src="{% static 'assets/profile.JPG' %}" alt="">
+        <img class="hambuger" src="{% static 'assets/Group 6.png' %}" alt="">
+      </div>
+      <div class="first">
+        <div class="name">
+          FAVOUR OLUWADAMILARE AROWOSEGBE
+        </div>
+        <div class="aboutMe">ABOUT ME</div>
+        <div class="about-word">IT'S ME, DEVFAVE!</div>
+        <div class="contactMe">CONTACT ME</div>
+        <div class="contact-word">Say Hello To Me</div>
+        <div class="work">
+          WEB-DEVELOPER
+        </div>
+      </div>
+    </div>
+    <div class="main2">
+      <div class="topM2">
+        <div class="about">About me</div>
+        <div>An enthusiastic tech lover, with the aim of making tech a lifestyle not just for me but for all. I have the skill set to achieve tech goals from tech ideas I encounter. Over the years, I have gained very useful experience in the process of supporting several tech innovative endeavours while pursuing my undergraduate studies. I have worked on several web projects, and have as well analyzed data of different sorts. With my expertise, I am well equipped to execute (big) data analysis and to join any group in carrying out a project and to get any task given to me done based on my listed skills.</div>
+        <div class="skills">My Skills</div>
+        <div class="middleM2">
+            <div><img class="im2" src="{% static 'assets/symbol.png' %}" alt="">HTML</div>
+            <div><img class="im2" src="{% static 'assets/CSS3.png' %}" alt="">CSS</div>
+            <div><img class="im2" src="{% static 'assets/Javascript.png' %}" alt="">Javascript</div>
+            <div><img class="im2" src="{% static 'assets/React.png' %}" alt="">ReactJS</div>
+            <div><img class="im2" src="{% static 'assets/Figma.png' %}" alt="">Figma</div>
+            <div><img class="im2" src="{% static 'assets/Google Chrome.png' %}" alt="">Chrome</div>
+            <div><img class="im2" src="{% static 'assets/Visual Studio Code.png' %}" alt="">VSCode</div>
+            <div><img class="im2" src="{% static 'assets/Shape (1).png' %}" alt="">Git</div>
+            <div><img class="im2" src="{% static 'assets/bootstrap.png' %}" alt="">bootstrap</div>
+            <div><img class="im2" src="{% static 'assets/python.png' %}" alt="">python</div>
+            <div><img class="im2" src="{% static 'assets/django.png' %}" alt="">django</div>
+        </div>
+      </div>
+      <div class="middle-about">
+        <div class="background">My background</div>
+        <div class="background-text">An enthusiastic tech lover, with the aim of making tech a lifestyle not just for me but for all. I have the skill set to achieve tech goals from tech ideas I encounter. Over the years, I have gained very useful experience in the process of supporting several tech innovative endeavours while pursuing my undergraduate studies. I have worked on several web projects, and have as well analyzed data of different sorts. With my expertise, I am well equipped to execute (big) data analysis and to join any group in carrying out a project and to get any task given to me done based on my listed skills.
+
+        Favour Arowosegbe Oluwadamilare is currently pursuing a Bachelor of Science in Mathematics at the Federal University of Agriculture, Abeokuta (FUNAAB), expected to graduate in 2025. I completed my West African School Certificate at Oritamefa Baptist Model School, Ring-Road, Oyo State, in 2020, which laid the foundation for my strong academic performance and passion for learning.
+        </div>
+        <div class="hobbies">Hobbies and Interest</div>
+        <div class="hobbies-text">I have a range of hobbies and interests that reflect a blend of creativity and relaxation. I’m passionate about coding, constantly engaging in various projects to explore new technologies and develop innovative web solutions. Music is a significant part of my life, offering a source of relaxation and inspiration through diverse genres and artists. I also have a keen interest in action movies, enjoying their thrilling plots and intense scenes as a way to unwind. Additionally, I like to explore new technologies, read both fiction and non-fiction books, and play video games for both entertainment and strategic challenge.</div>
+      </div>
+      <form method="post" class="middle-contact">
+        {% csrf_token %}
+        <div class="contacts">Contact me</div>
+        <div class="contacts-middle">
+          <div class="contacts-first">
+            <div class="names-contact">Name</div>
+            <input class="placeholder1" placeholder="YourName" name="name" type="text" required>
+            <div class="line1"></div>
+          </div>
+          <div class="contacts-next">
+            <div class="email-contact">Email</div>
+            <input class="placeholder2" placeholder="email.example.com" name="email" type="email" required>
+            <div class="line2"></div>
+          </div>
+        </div>
+        <div class="middle-contact2">
+          <div class="nachricht-contact">Message</div>
+        </div>
+        <div class="contacts-next2"><input class="placeholder3" placeholder="Hello, my name is . . ." name="message" type="text" required></div>
+        <div class="contacts-last2"></div>
+        <button type="submit" class="contacts-message">Send Message</button>
+      </form>
+      <div class="bottomM2">
+        <div><a href="https://fao-spec.github.io/amazon_clone/amazon.html" target="_blank"><img src="{% static 'assets/amazon-clone.png' %}" alt="" class="projects"></a></div>
+        <div><a href="https://tictactoeappdevfave.tiiny.site/" target="_blank"><img class="projects" src="{% static 'assets/tic-tac-toe.png' %}" alt=""></a></div>
+        <div><a href="https://fao-spec.github.io/multi-form/" target="_blank"><img src="{% static 'assets/multi form.png' %}" alt="" class="projects"></a></div>
+      </div>
+      <div class="lastM3">
+        <a style="width: 100%;" href="{% url 'projects' %}"><div><button id="btn-click" class="btn"><div><img class="arrow" src="{% static 'assets/Arrow right.png' %}" alt=""></div><div style="font-size: 13px;">All Projects</div></button></div></a>
+        <a href="{% url 'contact_me' %}"><div><button id="btn-contact" class="btn"><div><img class="arrow" src="{% static 'assets/Arrow right.png' %}" alt=""></div><div style="font-size: 13px;">Contact me</div></button></div></a>
+      </div>
+    </div>
+  {% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %} <title>About Me</title> {% endblock %}
+{% load static %} 
+{% block main %}
+<div class="main-agba">
+    <div class="main">
+      <div class="header">
+        <img class="profile-img" src="{% static 'assets/profile.JPG' %}" alt="">
+        <img class="hambuger" src="{% static 'assets/Group 6.png' %}" alt="">
+      </div>
+      <div class="first">
+        <div class="aboutMe" style="display: block;">ABOUT ME</div>
+        <div class="about-word" style="display: block;">IT'S ME, DEVFAVE!</div>
+      </div>
+    </div>
+    <div class="main2">
+      <div class="middle-about" style="display: block;">
+        <div class="background">My background</div>
+        <div class="background-text">An enthusiastic tech lover, with the aim of making tech a lifestyle not just for me but for all. I have the skill set to achieve tech goals from tech ideas I encounter. Over the years, I have gained very useful experience in the process of supporting several tech innovative endeavours while pursuing my undergraduate studies. I have worked on several web projects, and have as well analyzed data of different sorts. With my expertise, I am well equipped to execute (big) data analysis and to join any group in carrying out a project and to get any task given to me done based on my listed skills.
+
+        Favour Arowosegbe Oluwadamilare is currently pursuing a Bachelor of Science in Mathematics at the Federal University of Agriculture, Abeokuta (FUNAAB), expected to graduate in 2025. I completed my West African School Certificate at Oritamefa Baptist Model School, Ring-Road, Oyo State, in 2020, which laid the foundation for my strong academic performance and passion for learning.
+        </div>
+        <div class="hobbies">Hobbies and Interest</div>
+        <div class="hobbies-text">I have a range of hobbies and interests that reflect a blend of creativity and relaxation. I’m passionate about coding, constantly engaging in various projects to explore new technologies and develop innovative web solutions. Music is a significant part of my life, offering a source of relaxation and inspiration through diverse genres and artists. I also have a keen interest in action movies, enjoying their thrilling plots and intense scenes as a way to unwind. Additionally, I like to explore new technologies, read both fiction and non-fiction books, and play video games for both entertainment and strategic challenge.</div>
+      </div>
+      <div class="lastM3" style="width: 80%;">
+        <a href="{% url 'contact_me' %}"><div><button id="btn-contact" class="btn"><div><img class="arrow" src="{% static 'assets/Arrow right.png' %}" alt=""></div><div style="font-size: 13px;">Contact me</div></button></div></a>
+      </div>
+    </div>
+{% endblock %}

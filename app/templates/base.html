@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title%} {% endblock %} 
+<!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Load a font called Roboto from Google Fonts. -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      
+      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/apple-touch-icon.png' %}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/favicon-32x32.png' %}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/favicon-16x16.png' %}">
+      <link rel="manifest" href="/site.webmanifest">
+{% load static %} 
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+  .hii, .hii:active, .hii:focus, .hii:visited{
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+}
+</style>
+</head>
+<body>
+{% for message in messages %}
+          <div style="font-weight: bold; font-size: 20px;">{{ message }}</div>
+      {% endfor %}
+{% block main %}   
+{% endblock %}
+<div class="main-clicked">
+    <div class="x">
+      <img class="xoxo" src="{% static 'assets/Group 4.png' %}" alt="">
+    </div>
+    <div class="second">
+      <div class="second-left">
+        <div class="menu">MENU</div>
+        <div class="second-left">
+          <li>
+            <a class="home" href="{% url 'index' %}">HOME</a> <br> <br> <br>
+            <a class="project-hambuger" href="{% url 'projects' %}">PROJECT</a> <br> <br> <br>
+            <a class="about-hambuger" href="{% url 'about_me' %}">ABOUT</a> <br> <br> <br>
+            <a class="contact-hambuger" href="{% url 'contact_me' %}">CONTACT</a> <br> <br> <br>
+          </li>
+        </div>
+      </div>
+      <div class="second-right">
+        <p class="em">arowofavour20@gmail.com</p>
+        <p class="nu">+234 705 443 5052</p>
+        <p>
+          <p class="ara"><a href="https://www.instagram.com/damilaaare_/" target="_blank"><img  src="{% static 'assets/Instagram.png' %}" alt=""></a></p>
+          <p class="ara"><a href="https://x.com/devvFave" target="_blank"><img src="{% static 'assets/Icon.png' %}" alt=""></a></p>
+        </p>
+      </div>
+    </div>
+</div>
+<div class="main3">
+    <div class="info">
+      <div id="btn-click2" class="information"><a class="hii" href="{% url 'projects' %}">PROJECTS</a></div>
+      <div id="btn-click3" class="information"><a class="hii"  href="{% url 'about_me' %}">ABOUT</a></div>
+      <div id="btn-click4" class="information"><a class="hii"  href="{% url 'contact_me' %}">CONTACT</a></div>
+    </div>
+    <div class="extra">
+      <div class="mail">
+        <div class="information-2">arowofavour20@gmail.com</div>
+        <div class="information-2">+2347054435052</div>
+      </div>
+      <div class="logo"><img class="profile-img" src="{% static 'assets/profile.JPG' %}" alt=""></div>
+    </div>
+  </div>
+</div>
+<script src="{% static 'script/script.js' %}"></script>
+</body>
+</html>
+

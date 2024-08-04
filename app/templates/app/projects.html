@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} <title>Projects</title> {% endblock %}
+{% load static %} 
+{% block main %}
+<div class="main-agba">
+    <div class="main">
+      <div class="header">
+        <img class="profile-img" src="{% static 'assets/profile.JPG' %}" alt="">
+        <img class="hambuger" src="{% static 'assets/Group 6.png' %}" alt="">
+      </div>
+      <div class="first">
+        <div class="project" style="display: block;">MY PROJECTS</div>
+        <div class="project-word" style="display: block;">MADE WITH LOVE</div>
+      </div>
+    </div>
+    <div class="main2">
+        <div class="bottomM2">
+            <div><a href="https://fao-spec.github.io/amazon_clone/amazon.html" target="_blank"><img src="{% static 'assets/amazon-clone.png' %}" alt="" class="projects"></a></div>
+            <div><a href="https://tictactoeappdevfave.tiiny.site/" target="_blank"><img class="projects" src="{% static 'assets/tic-tac-toe.png' %}" alt=""></a></div>
+            <div><a href="https://fao-spec.github.io/multi-form/" target="_blank"><img src="{% static 'assets/multi form.png' %}" alt="" class="projects"></a></div>
+            <div><a href="https://fao-spec.github.io/rock-paper-scissors-game/" target="_blank"><img src="{% static 'assets/rock-paper-scissors.png' %}" alt="" class="projects"></a></div>
+            <div><a href="https://fao-spec.github.io/youtube-clone/" target="_blank"><img src="{% static 'assets/youtube-clone.png' %}" alt="" class="projects"></a></div>
+            <div><a href="https://fao-spec.github.io/notification-page/" target="_blank"><img src="{% static 'assets/notification-page.png' %}" class="projects" alt=""></a></div>
+        </div>
+      <div class="lastM3" style="width: 80%;">
+        <a href="{% url 'contact_me' %}"><div><button id="btn-contact" class="btn"><div><img class="arrow" src="{% static 'assets/Arrow right.png' %}" alt=""></div><div style="font-size: 13px;">Contact me</div></button></div></a>
+      </div>
+    </div>
+{% endblock %}

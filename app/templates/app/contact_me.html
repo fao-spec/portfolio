@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} <title>Contact Me</title> {% endblock %}
+{% load static %} 
+{% block main %}
+<div class="main-agba">
+    <div class="main">
+      <div class="header">
+        <img class="profile-img" src="{% static 'assets/profile.JPG' %}" alt="">
+        <img class="hambuger" src="{% static 'assets/Group 6.png' %}" alt="">
+      </div>
+      <div class="first">
+        <div class="contactMe" style="display: block;">CONTACT ME</div>
+        <div class="contact-word" style="display: block;">Say Hello To Me</div>
+      </div>
+    </div>
+    <div class="main2">
+      <form method="post" class="middle-contact" style="display: block;">
+        {% csrf_token %}
+        <div class="contacts">Contact me</div>
+        <div class="contacts-middle">
+          <div class="contacts-first">
+            <div class="names-contact">Name</div>
+            <input class="placeholder1" placeholder="YourName" name="name" type="text" required>
+            <div class="line1"></div>
+          </div>
+          <div class="contacts-next">
+            <div class="email-contact">Email</div>
+            <input class="placeholder2" placeholder="email.example.com" name="email" type="email" required>
+            <div class="line2"></div>
+          </div>
+        </div>
+        <div class="middle-contact2">
+          <div class="nachricht-contact">Message</div>
+        </div>
+        <div class="contacts-next2"><input class="placeholder3" placeholder="Hello, my name is . . ." name="message" type="text" required></div>
+        <div class="contacts-last2"></div>
+        <button type="submit" class="contacts-message">Send Message</button>
+      </form>
+    </div>
+{% endblock %}
