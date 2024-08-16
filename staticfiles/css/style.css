@@ -1,0 +1,601 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+    width: 120px;
+}
+a{
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+    /* transition: scale, background-color, rotate;
+    transition-duration: .5s; */
+    /* transition-timing-function: ease-in-out; */
+}
+a, a:active, a:focus, a:visited{
+    color:#000;
+}
+
+/* a:hover{
+    rotate: 36deg;
+    scale: 1.3; 
+} */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.profile-img{
+    width: 70px;
+    border-radius: 35px;
+    cursor: default;
+}
+
+img{
+    cursor: pointer;
+}
+
+.hambuger{
+    width: 40px;
+    height: 20px;
+}
+
+.main-agba{
+    display: block;
+}
+
+.main{
+    height: 100vh;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+.first{
+    margin-top: 15%;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.name{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.project{
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+.aboutMe{
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+.contactMe{
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+.work{
+    font-size: 30px;
+}
+
+.project-word{
+    font-size: 30px;
+    display: none;
+}
+
+.about-word{
+    font-size: 30px;
+    display: none;
+}
+
+.contact-word{
+    font-size: 30px;
+    display: none;
+}
+
+.main-clicked{
+    height: 100vh;
+    padding-top: 50px;
+    display: none;
+}
+
+.x{
+    margin-left: 87%;
+    margin-top: 26px;
+}
+
+.second{
+    display: flex;
+    margin-top: 8%;
+    margin-right: 10%;
+}
+
+.menu{
+    height: 15px;
+    margin-top: 22px;
+    rotate: 270deg;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.second-left{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 4%;
+}
+
+.second-right{
+    margin-left: 20%;
+    width: 20%;
+    margin-top: 10%;
+}
+
+.ara{
+    display: inline-block;
+    transition: scale, rotate;
+    transition-duration: .5s;
+    margin-right: 20px;
+    transition-timing-function: ease-in-out; 
+}
+
+.ara:hover{
+    rotate: 360deg;
+    scale: 1.3;
+}
+
+p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.nu{
+    width: 130px;
+}
+
+.main2{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.topM2{
+    width: 100%;
+}
+
+.about{
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.skills{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.middleM2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+.im2{
+    margin-right: 10px;
+    cursor: default;
+    width: 8%;
+}
+
+.middle-about{
+    display: none;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.background, .hobbies{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.hobbies{
+    margin-top: 10%;
+}
+
+.middle-contact{
+    display: none;
+    margin-top: 10%;
+}
+
+.contacts{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contacts-first{
+    display: grid;
+    width: 45%;
+    margin-right: 10%;
+}
+
+.contacts-middle{
+    display: flex;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.contacts-next{
+    display: grid;
+    width: 45%;
+}
+
+.contacts-last{
+    display: flex;
+}
+
+.contacts-last2{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.contacts-message{
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 5%;
+    height: 40px;
+    border: none;
+    background-color: lightgrey;
+    cursor: pointer;
+    transition: background-color;
+    transition-duration: .5s;
+}
+
+.contacts-message:hover{
+    background-color: gray;
+}
+
+.line1{
+    margin-right: 10%;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.line2{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.names-contact{
+    margin-right: 45%;
+    width: 10%;
+}
+
+.nachricht-contact{
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.placeholder1{
+    width: 100%;
+}
+
+.placeholder2{
+    width: 100%;
+}
+
+.placeholder3{
+    width: 100%;
+}
+
+input{
+    border: none;
+    padding-left: 10px;
+    height: 40px;
+}
+
+.bottomM2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.projects{
+    width: 100%;
+    height: 200px;
+    margin-top: 30%;
+    transition: scale, opacity;
+    transition-duration: 0.5s;
+}
+
+.projects:hover{
+    opacity: 0.8;
+    scale: 1.3;
+}
+
+.project-only{
+    display: none;
+}
+
+.project-only2{
+    display: none;
+}
+
+.lastM3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+    width: 40%;
+    margin-top: 6%;
+    margin-left: 30%;
+    text-align: center;
+}
+
+/* #lol{
+    width: 20%;
+    margin-top: 6%;
+    margin-left: 45%;
+} */
+
+.btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color, font-weight;
+    transition-duration: .5s;
+    padding-right: 10%;
+    font-size: 80%;
+}
+
+.btn:hover{
+    background-color: gray;
+}
+
+.arrow{
+    width: 20px;
+}
+
+.main3{
+    background-color: black;
+    color: white;
+    height: 35vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.information{
+    font-size: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.information-2{
+    font-size: 10px;
+    margin-top: 20px;
+    cursor: default;
+}
+
+.mail{
+    width: 25%;
+    padding-left: 10%;
+}
+
+.logo{
+    width: 40%;
+    padding-left: 30%;
+}
+
+.extra{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+@media screen  and (max-width: 700px) {
+    /* a{
+        transition: scale, background-color, rotate;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+    } */
+    /* a:hover{
+        rotate: 36deg;
+        scale: 1.3;
+        background-color: black;
+        color: white;
+    } */
+    .first{
+        margin-top: 30%;
+        text-align: center;
+    }
+    .name{
+        font-size: 220%;
+    }
+    .project{
+        font-size: 320%;
+    }
+    .aboutMe{
+        font-size: 400%;
+    }
+    .contactMe{
+        font-size: 400%;
+    }
+    .x{
+        margin-left: 82%;
+    }
+    .second{
+        display: grid;
+        margin-top: 8%;
+    }
+    .second-left{
+        width: 0%;
+    }
+    .menu{
+        height: 15px;
+        margin-top: 22px;
+        rotate: 270deg;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .second-right{
+        margin-left: 10%;
+        width: 90%;
+    }
+    .em{
+        width: 100%;
+    }
+    .nu{
+        width: 100%;
+    }
+    .ara{
+        display: inline-block;
+        width: 30px;
+        transition: scale, rotate;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out; 
+    }
+    p{
+        width: 200px;
+    }
+    .topM2{
+        width: 82%;
+        margin-left: 10%;
+    }
+    .middle-about{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .middleM2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 150px;
+        margin-bottom: 10%;
+    }
+    .middle-contact{
+        margin-left: 10%;
+    }
+    .contacts-middle{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contacts-first, .contacts-next{
+        width: 85%;
+        margin-bottom: 5%;
+    }
+    .contacts-next2, .contacts-last2{
+        width: 85%;
+    }
+    .contacts-message{
+        width: 85%;
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .bottomM2{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20%;
+        margin-left: 10%;
+    }
+    .projects{
+        width: 90%;
+        height: 200px;
+        margin-top: 12%;
+    }
+    .lastM3{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+    .btn{
+        margin-bottom: 5%;
+        padding-right: 0%;
+        padding-left: 0%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    .main3{
+        background-color: black;
+        color: white;
+        height: 35vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .extra{
+        display: flex;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .information{
+        font-size: 80%;
+    }    
+    .mail{
+        margin-left: 0%;
+    }
+    .logo{
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    
+}
