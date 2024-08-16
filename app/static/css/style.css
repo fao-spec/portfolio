@@ -183,8 +183,7 @@ p{
 }
 
 .topM2{
-    width: 66%;
-    margin-left: 16%;
+    width: 100%;
 }
 
 .about{
@@ -203,7 +202,8 @@ p{
 
 .middleM2{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
 }
 
 .im2{
@@ -214,8 +214,7 @@ p{
 
 .middle-about{
     display: none;
-    width: 66%;
-    margin-left: 16%;
+    width: 100%;
     margin-top: 10%;
 }
 
