@@ -4,6 +4,7 @@ from django.contrib import messages
 
 def index(request):
     return render(request, "app/index.html")
+    
 def projects(request):
     return render(request, "app/projects.html")
 
