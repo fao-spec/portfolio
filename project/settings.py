@@ -29,7 +29,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://portfolio-1-2avc.onrender.com", "52.41.36.82", "54.191.253.12", "44.226.122.3", "portfolio.onrender.com"]
+ALLOWED_HOSTS = ["https://portfolio-1-2avc.onrender.com", "52.41.36.82", "54.191.253.12", "44.226.122.3", "portfolio.onrender.com", "portfolio-1-2avc.onrender.com"]
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
